@@ -1,0 +1,33 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "Tdd a famous simple coding interview question",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikejavier/fizzbuzz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikejavier/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/mikejavier/fizzbuzz#readme",
+  "dependencies": {},
+  "engines": {
+    "node": ">=0.10.3 <0.12"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
