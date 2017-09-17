@@ -11,6 +11,10 @@ describe('Main.js', () => {
 
   })
 
+  it('should return 0 when input number is 0', () => {
+    expect(fizzbuzz(0)).to.equal(0)
+  })
+
   it('should return "Fizz" when multiple of 3 ', () => {
     expect(fizzbuzz(3)).to.equal('Fizz')
   })

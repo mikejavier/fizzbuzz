@@ -6,11 +6,18 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**/*.js",
     "test": "node_modules/.bin/mocha __tests__/**/*.spec.js --require babel-register",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "nyc npm test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikejavier/fizzbuzz.git"
+  },
+  "nyc": {
+    "functions": 80,
+    "lines": 80,
+    "check-coverage": true,
+    "reporter": ["text", "html"]
   },
   "keywords": [],
   "author": "",
@@ -33,6 +40,7 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "mocha": "^3.5.3"
+    "mocha": "^3.5.3",
+    "nyc": "^11.2.1"
   }
 }
